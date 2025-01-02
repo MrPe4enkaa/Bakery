@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tl.to(panel, {
                 xPercent: 0,
                 duration: 0.7,
+                yPercent: 0,
                 ease: "power2.out",
                 onStart: () => {
                     panel.style.display = "flex";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tl.to(panel, {
                 duration: 0.7,
                 xPercent: 100,
+                yPercent: 0,
                 ease: "power2.out",
                 onComplete: () => {
                     panel.style.display = "none";
