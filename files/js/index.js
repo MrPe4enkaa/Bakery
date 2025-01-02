@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tl = gsap.timeline({ paused: true });
     gsap.to(panel, {
         xPercent: 100,
+        yPercent: 1.4,
         duration: .001
     })
     inp.addEventListener("change", () => {
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tl.to(panel, {
                 xPercent: 0,
                 duration: 0.7,
-                yPercent: 0,
+                yPercent: 1.4,
                 ease: "power2.out",
                 onStart: () => {
                     panel.style.display = "flex";
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             tl.to(panel, {
                 duration: 0.7,
                 xPercent: 100,
-                yPercent: 0,
+                yPercent: 1.4,
                 ease: "power2.out",
                 onComplete: () => {
                     panel.style.display = "none";
